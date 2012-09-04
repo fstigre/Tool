@@ -42,6 +42,9 @@
       <bold>false</bold>
      </font>
     </property>
+    <property name="toolTip">
+     <string/>
+    </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
@@ -72,6 +75,9 @@
     <widget class="QWidget" name="tab_Calculator">
      <property name="enabled">
       <bool>true</bool>
+     </property>
+     <property name="toolTip">
+      <string>Yield Calculator</string>
      </property>
      <attribute name="icon">
       <iconset resource="Icons.qrc">
@@ -922,6 +928,9 @@
      <zorder>label_11</zorder>
     </widget>
     <widget class="QWidget" name="tab_3">
+     <property name="toolTip">
+      <string>FindR</string>
+     </property>
      <attribute name="icon">
       <iconset resource="Icons.qrc">
        <normaloff>:/Icons/images/FindRLogo-256x256.png</normaloff>:/Icons/images/FindRLogo-256x256.png</iconset>
@@ -950,30 +959,6 @@
        <string>DXF</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_Sufix">
-      <property name="geometry">
-       <rect>
-        <x>168</x>
-        <y>143</y>
-        <width>28</width>
-        <height>35</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>18</pointsize>
-        <weight>50</weight>
-        <italic>false</italic>
-        <bold>false</bold>
-       </font>
-      </property>
-      <property name="toolTip">
-       <string>Sufix</string>
-      </property>
-      <property name="text">
-       <string>B</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
@@ -995,9 +980,9 @@
      <widget class="QLineEdit" name="lineEdit_FindPart">
       <property name="geometry">
        <rect>
-        <x>198</x>
+        <x>168</x>
         <y>143</y>
-        <width>175</width>
+        <width>205</width>
         <height>35</height>
        </rect>
       </property>
@@ -1109,7 +1094,7 @@
        <property name="geometry">
         <rect>
          <x>165</x>
-         <y>120</y>
+         <y>112</y>
          <width>51</width>
          <height>23</height>
         </rect>
@@ -1202,9 +1187,9 @@
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>92</y>
+         <y>82</y>
          <width>207</width>
-         <height>71</height>
+         <height>81</height>
         </rect>
        </property>
        <property name="font">
@@ -1215,11 +1200,11 @@
        <property name="title">
         <string>File Existence</string>
        </property>
-       <widget class="QLabel" name="label_LastChecked_2">
+       <widget class="QLabel" name="label_LastChecked">
         <property name="geometry">
          <rect>
           <x>90</x>
-          <y>48</y>
+          <y>58</y>
           <width>71</width>
           <height>13</height>
          </rect>
@@ -1233,7 +1218,7 @@
          <string>Last Number Checked</string>
         </property>
         <property name="text">
-         <string/>
+         <string>last checked</string>
         </property>
        </widget>
       </widget>
@@ -1249,7 +1234,6 @@
      </widget>
      <zorder>groupBox_6</zorder>
      <zorder>pushButton_Dxf</zorder>
-     <zorder>lineEdit_Sufix</zorder>
      <zorder>label_18</zorder>
      <zorder>lineEdit_FindPart</zorder>
      <zorder>pushButton_Drawing</zorder>
@@ -1263,7 +1247,7 @@
      <x>0</x>
      <y>0</y>
      <width>692</width>
-     <height>21</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

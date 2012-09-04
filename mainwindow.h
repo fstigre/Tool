@@ -21,6 +21,14 @@ public:
     const QColor& getColor();
 
 private slots:
+
+    //********** FINDER ************
+    void on_pushButton_Dxf_clicked();
+    void on_pushButton_Pdf_clicked();
+    void on_pushButton_Drawing_clicked();
+    void on_pushButton_Check_clicked();
+    //********** END FINDER
+
     void on_pushButton_Calculate_clicked();
     void on_radioButton_Turret_clicked();
     void on_radioButton_Bystronic_clicked();
@@ -33,18 +41,23 @@ private slots:
     void on_actionSave_Layout_triggered();
     void on_actionAbout_Tool_triggered();
     void on_pushButton_EditOptions_clicked();
-    void on_pushButton_Dxf_clicked();
-    void on_pushButton_Pdf_clicked();
-    void on_pushButton_Drawing_clicked();
     void on_actionSave_Color_triggered();
     void on_actionReset_Color_triggered();
-
     void on_pushButton_Clone_clicked();
-
-    void on_pushButton_Check_clicked();
 
 private:
     Ui::MainWindow *ui;
+
+    //*** FINDER FUNCTIONS***
+    void foundIt();
+    void notFound();
+    void searchingFiles();
+    void doesExists(QString);
+    void findDrawing(QString);
+    void findPdf(QString);
+    QString fileNumber;
+    //**** FINDR ENDS HERE **
+
     void calculate();
     void reset();
     void disableButtons();
@@ -57,11 +70,7 @@ private:
     void loadColor();
     void saveColor();
     void resetColor();
-    void foundIt();
-    void foundItLessThan();
-    void searchingFiles();
-    void notFound();
-    void notFoundLessThan();
+
     QGraphicsScene *scene;
     QGraphicsRectItem *rectangle;
     QColor partColor;
