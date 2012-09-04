@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>images/calculator.png</file>
+        <file>images/table.png</file>
+        <file>images/money.png</file>
+        <file>images/tuD-2.png</file>
+        <file>images/toolLogo-128x60.png</file>
+        <file>images/toolLogo-269x128.png</file>
+        <file>images/toolLogo-128x128.png</file>
+        <file>images/application_view_list.png</file>
+        <file>images/lock_edit.png</file>
+        <file>images/color_swatch.png</file>
+        <file>images/paintcan.png</file>
+        <file>images/tag_blue_edit.png</file>
+        <file>images/FindRLogo-256x256.png</file>
+        <file>images/FindRLogo-80x256.png</file>
+        <file>images/color_wheel.png</file>
+        <file>images/application_cascade.png</file>
+        <file>images/application_delete.png</file>
+        <file>images/cancel.png</file>
+        <file>images/action_refresh_blue.gif</file>
+    </qresource>
+</RCC>

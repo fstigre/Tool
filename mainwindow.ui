@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Icons.qrc">
+    <normaloff>:/Icons/images/toolLogo-128x60.png</normaloff>:/Icons/images/toolLogo-128x60.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>671</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>20</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="documentMode">
+     <bool>false</bool>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="tab_Calculator">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="icon">
+      <iconset resource="Icons.qrc">
+       <normaloff>:/Icons/images/calculator.png</normaloff>:/Icons/images/calculator.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Calculator</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>450</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Total Parts:</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_Saw">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>345</y>
+        <width>102</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Calculate for Saw</string>
+      </property>
+      <property name="text">
+       <string>Saw</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>450</y>
+        <width>62</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Yields: </string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>325</width>
+        <height>88</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>P a r t   D i m e n s i o n s</string>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>30</y>
+         <width>34</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string> Width</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_PartWidth">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>47</y>
+         <width>105</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Part Width Dimension</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>39</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Length</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_PartLength">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>47</y>
+         <width>105</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Part Length Dimension</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ColorPick">
+       <property name="geometry">
+        <rect>
+         <x>287</x>
+         <y>45</y>
+         <width>25</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Edit Color</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="Icons.qrc">
+         <normaloff>:/Icons/images/paintcan.png</normaloff>:/Icons/images/paintcan.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>19</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Clone">
+       <property name="geometry">
+        <rect>
+         <x>138</x>
+         <y>30</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Clone Numbers</string>
+       </property>
+       <property name="text">
+        <string>c</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_Bystronic">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>285</y>
+        <width>102</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>IBeamCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Calculate for Bystronics</string>
+      </property>
+      <property name="text">
+       <string>Bystronic</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_Mazak">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>315</y>
+        <width>102</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Calculate for Mazak</string>
+      </property>
+      <property name="text">
+       <string>Mazak</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Reset">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>480</y>
+        <width>60</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::TabFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>Reset Input Fields</string>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>250</y>
+        <width>181</width>
+        <height>88</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>S h e e t   S i z e</string>
+      </property>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_SheetWidth">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>47</y>
+         <width>60</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Sheet Width</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="keyboardTracking">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_SheetLength">
+       <property name="geometry">
+        <rect>
+         <x>108</x>
+         <y>47</y>
+         <width>60</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Sheet Length</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>86</x>
+         <y>50</y>
+         <width>19</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>30</y>
+         <width>39</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Length</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>30</y>
+         <width>34</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string> Width</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_Turret">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>255</y>
+        <width>102</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Calculate for Turrets</string>
+      </property>
+      <property name="text">
+       <string>Turrets</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Calculate">
+      <property name="geometry">
+       <rect>
+        <x>527</x>
+        <y>480</y>
+        <width>115</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::TabFocus</enum>
+      </property>
+      <property name="toolTip">
+       <string>Calculate Yields</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_TotalParts">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>470</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Total Parts</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>350</y>
+        <width>181</width>
+        <height>115</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>O t h e r</string>
+      </property>
+      <widget class="QLabel" name="label_Clamp">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>25</y>
+         <width>41</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Clamp:</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_Clamp">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>25</y>
+         <width>48</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Clamp Space</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Kerf">
+       <property name="geometry">
+        <rect>
+         <x>82</x>
+         <y>53</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Kerf:</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_Kerf">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>53</y>
+         <width>48</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Space Between Parts</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_Web">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>80</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Web:</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="doubleSpinBox_Web">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>48</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Material Around Sheet</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_EditOptions">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>75</y>
+         <width>25</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Edit Options</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="Icons.qrc">
+         <normaloff>:/Icons/images/tag_blue_edit.png</normaloff>:/Icons/images/tag_blue_edit.png</iconset>
+       </property>
+      </widget>
+      <zorder>doubleSpinBox_Web</zorder>
+      <zorder>doubleSpinBox_Kerf</zorder>
+      <zorder>label_Clamp</zorder>
+      <zorder>label_Kerf</zorder>
+      <zorder>doubleSpinBox_Clamp</zorder>
+      <zorder>label_Web</zorder>
+      <zorder>pushButton_EditOptions</zorder>
+     </widget>
+     <widget class="QLabel" name="label_Yields">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>470</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>22</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Total Yields</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_Sheet">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>380</width>
+        <height>190</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="sceneRect">
+       <rectf>
+        <x>0.000000000000000</x>
+        <y>0.000000000000000</y>
+        <width>0.000000000000000</width>
+        <height>0.000000000000000</height>
+       </rectf>
+      </property>
+      <property name="resizeAnchor">
+       <enum>QGraphicsView::NoAnchor</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>210</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>120</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_InfoScreen">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>20</y>
+        <width>201</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Verdana</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_copyYields">
+      <property name="geometry">
+       <rect>
+        <x>404</x>
+        <y>480</y>
+        <width>51</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Copy Yields</string>
+      </property>
+      <property name="text">
+       <string>Copy</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>12</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>60</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_Message">
+      <property name="geometry">
+       <rect>
+        <x>93</x>
+        <y>400</y>
+        <width>221</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Nothing has been copied</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>400</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Last Copied:</string>
+      </property>
+     </widget>
+     <zorder>groupBox_2</zorder>
+     <zorder>groupBox</zorder>
+     <zorder>label</zorder>
+     <zorder>radioButton_Saw</zorder>
+     <zorder>label_2</zorder>
+     <zorder>radioButton_Bystronic</zorder>
+     <zorder>radioButton_Mazak</zorder>
+     <zorder>pushButton_Reset</zorder>
+     <zorder>radioButton_Turret</zorder>
+     <zorder>pushButton_Calculate</zorder>
+     <zorder>label_TotalParts</zorder>
+     <zorder>groupBox_3</zorder>
+     <zorder>label_Yields</zorder>
+     <zorder>graphicsView_Sheet</zorder>
+     <zorder>label_8</zorder>
+     <zorder>label_9</zorder>
+     <zorder>label_InfoScreen</zorder>
+     <zorder>pushButton_copyYields</zorder>
+     <zorder>label_10</zorder>
+     <zorder>label_Message</zorder>
+     <zorder>label_11</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="icon">
+      <iconset resource="Icons.qrc">
+       <normaloff>:/Icons/images/FindRLogo-256x256.png</normaloff>:/Icons/images/FindRLogo-256x256.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>FindR</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton_Dxf">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>240</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Open PDF</string>
+      </property>
+      <property name="text">
+       <string>DXF</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Sufix">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>143</y>
+        <width>28</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Sufix</string>
+      </property>
+      <property name="text">
+       <string>B</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>123</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Part Number:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_FindPart">
+      <property name="geometry">
+       <rect>
+        <x>198</x>
+        <y>143</y>
+        <width>175</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Part Number</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Drawing">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>143</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Open Drawing</string>
+      </property>
+      <property name="text">
+       <string>DRAWING</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Pdf">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>190</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>Open DXF</string>
+      </property>
+      <property name="text">
+       <string>PDF</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>147</x>
+        <y>108</y>
+        <width>371</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QGraphicsView" name="graphicsView_Drawing">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Drawing File</string>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView_Pdf">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>120</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>PDF File</string>
+       </property>
+      </widget>
+      <widget class="QGraphicsView" name="graphicsView_Dxf">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>DXF File</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_Check">
+       <property name="geometry">
+        <rect>
+         <x>165</x>
+         <y>120</y>
+         <width>51</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Check File Existence</string>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>106</y>
+         <width>18</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>DXF</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>106</y>
+         <width>18</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>PDF</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>106</y>
+         <width>22</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>DWG</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>138</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Last  Checked :</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>92</y>
+         <width>207</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="title">
+        <string>File Existence</string>
+       </property>
+       <widget class="QLabel" name="label_LastChecked_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>48</y>
+          <width>71</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>Last Number Checked</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <zorder>groupBox_8</zorder>
+      <zorder>graphicsView_Drawing</zorder>
+      <zorder>graphicsView_Pdf</zorder>
+      <zorder>graphicsView_Dxf</zorder>
+      <zorder>pushButton_Check</zorder>
+      <zorder>label_25</zorder>
+      <zorder>label_26</zorder>
+      <zorder>label_27</zorder>
+      <zorder>label_28</zorder>
+     </widget>
+     <zorder>groupBox_6</zorder>
+     <zorder>pushButton_Dxf</zorder>
+     <zorder>lineEdit_Sufix</zorder>
+     <zorder>label_18</zorder>
+     <zorder>lineEdit_FindPart</zorder>
+     <zorder>pushButton_Drawing</zorder>
+     <zorder>pushButton_Pdf</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAbout_Tool"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionMaterials_List"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionSave_Layout"/>
+    <addaction name="actionSave_Color"/>
+    <addaction name="actionReset_Color"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuTools"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMaterials_List"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionMaterials_List">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/Icons/images/application_view_list.png</normaloff>
+     <normalon>:/Icons/images/table.png</normalon>:/Icons/images/application_view_list.png</iconset>
+   </property>
+   <property name="text">
+    <string>Materials List</string>
+   </property>
+  </action>
+  <action name="actionSave_Layout">
+   <property name="icon">
+    <iconset>
+     <normalon>:/Icons/images/application_cascade.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Save Layout</string>
+   </property>
+  </action>
+  <action name="actionAbout_Tool">
+   <property name="icon">
+    <iconset>
+     <normalon>:/Icons/images/toolLogo-128x60.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>About Tool</string>
+   </property>
+  </action>
+  <action name="actionSave_Color">
+   <property name="icon">
+    <iconset resource="Icons.qrc">
+     <normaloff>:/Icons/images/color_swatch.png</normaloff>:/Icons/images/color_swatch.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Color</string>
+   </property>
+  </action>
+  <action name="actionReset_Color">
+   <property name="icon">
+    <iconset>
+     <normalon>:/Icons/images/cancel.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Reset Color</string>
+   </property>
+  </action>
+  <action name="actionReset_Layout">
+   <property name="text">
+    <string>Reset Layout</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEdit_PartWidth</tabstop>
+  <tabstop>lineEdit_PartLength</tabstop>
+  <tabstop>doubleSpinBox_SheetWidth</tabstop>
+  <tabstop>doubleSpinBox_SheetLength</tabstop>
+  <tabstop>doubleSpinBox_Clamp</tabstop>
+  <tabstop>doubleSpinBox_Kerf</tabstop>
+  <tabstop>doubleSpinBox_Web</tabstop>
+  <tabstop>pushButton_Calculate</tabstop>
+  <tabstop>radioButton_Turret</tabstop>
+  <tabstop>radioButton_Bystronic</tabstop>
+  <tabstop>radioButton_Mazak</tabstop>
+  <tabstop>radioButton_Saw</tabstop>
+  <tabstop>pushButton_Reset</tabstop>
+  <tabstop>pushButton_copyYields</tabstop>
+  <tabstop>pushButton_EditOptions</tabstop>
+  <tabstop>pushButton_ColorPick</tabstop>
+  <tabstop>pushButton_Clone</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>graphicsView_Sheet</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
